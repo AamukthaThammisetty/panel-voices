@@ -49,3 +49,7 @@ async def create_audio_file(audio: AudioFile):
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to insert audio file: {str(e)}")
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run("main:app", host="0.0.0.0", port=Config.PORT, reload=True)
