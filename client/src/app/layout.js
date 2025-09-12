@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
         style={{ fontFamily: "var(--font-waldenburg)" }}
       >
         {children}
+        <elevenlabs-convai agent-id="agent_9101k4zf8sm3etvan45yd28s95tm"></elevenlabs-convai><script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
       </body>
     </html>
   );
