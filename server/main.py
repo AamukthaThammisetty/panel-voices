@@ -4,9 +4,11 @@ from db import collection
 from config import Config
 from models.schema import AudioFile, AudioResponse
 from models.constants import AudioLanguage
+import os
 
 app = FastAPI(title="Audio Files API")
 
+# Enable CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -50,6 +52,9 @@ async def create_audio_file(audio: AudioFile):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Failed to insert audio file: {str(e)}")
 
+
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("main:app", host="0.0.0.0", port=Config.PORT, reload=True)
+    # ✅ Convert PORT to int before passing to uvicorn
+    port = int(os.environ.get("PORT", Config.PORT))
+    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=True)
