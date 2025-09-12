@@ -13,3 +13,7 @@
 
 Experience the live version of the application here: [https://panel-voices-aamuktha.vercel.app/](https://panel-voices-aamuktha.vercel.app/)
 
+## Preview
+
+![Panel-voices](/images/panel-voices.jpeg)
+![Panel-voices2](/images/panel-voices2.jpeg)
