@@ -5,8 +5,8 @@ import { ChevronDown } from "lucide-react"
 
 export default function Header() {
   return (
-    <header className="px-8  bg-white">
-      <div className="container mx-auto px-4">
+    <header className="lg:px-8 bg-white border-b sticky top-0 z-50">
+      <div className="container mx-auto">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center">
@@ -14,7 +14,7 @@ export default function Header() {
           </div>
 
           {/* Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden xl:flex items-center space-x-8">
             <div className="flex items-center space-x-1 cursor-pointer">
               <span className="text-gray-700">Creative Platform</span>
               <ChevronDown className="h-4 w-4 text-gray-500" />

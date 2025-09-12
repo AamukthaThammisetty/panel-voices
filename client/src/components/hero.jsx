@@ -12,7 +12,7 @@ export default function HeroSection() {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg md:text-md text-black max-w-4xl font-bold mx-auto leading-relaxed">
+        <p className="text-lg md:text-md text-black max-w-4xl mx-auto leading-relaxed">
           AI voice models and products powering millions of developers, creators, and enterprises. From
           low-latency conversational agents to the leading AI voice generator for voiceovers and audiobooks.
         </p>
