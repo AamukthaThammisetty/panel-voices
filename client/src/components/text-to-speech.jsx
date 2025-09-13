@@ -98,7 +98,7 @@ export default function TextToSpeechExact() {
           setAudioFiles(audioData);
           setText(audioData[0].text);
           setSelectedLanguage(audioData[0].language);
-          setCurrentAudioUrl(response.data.audio_files[0].url)
+          setCurrentAudioUrl(audioData[0].url)
         } else {
           console.error("Error fetching data:", error.message);
         }
